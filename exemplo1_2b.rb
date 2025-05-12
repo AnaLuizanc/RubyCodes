@@ -6,10 +6,15 @@ start_time = Time.now
 
 output = StringIO.new
 (1..10000000).each do |i|
-  output.print "Fizz," if i % 3 == 0
-  output.print "Buzz," if i % 5 == 0
-  output.print "FizzBuzz," if i % 15 == 0
-  output.print "#{i}," if i%3 != 0 && i%5 != 0
+  if i % 15 == 0
+    output.print "FizzBuzz,"
+  elsif i % 3 == 0
+    output.print "Fizz,"
+  elsif i % 5 == 0
+    output.print "Buzz,"
+  else
+    output.print "#{i},"
+  end
 end
 puts output.string
 
