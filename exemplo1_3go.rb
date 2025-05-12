@@ -10,14 +10,6 @@ else
   puts "Resultado: #{a}"
 end
 
-a = 5 #tipo inteiro
-print "#{a}->"
-verifica a
-
-b = 3.0 #tipo float
-print "#{b}->"
-verifica b
-
 c = 2.to_r #tipo racional
 print "#{c}->"
 verifica c
@@ -25,3 +17,6 @@ verifica c
 d = 15.to_c #tipo complexo
 print "#{d}->"
 verifica d # saída = ∞ + (não definido) * i
+
+
+
