@@ -5,7 +5,7 @@
 def verifica a
   a = a / 0
 rescue
-  puts "Deu erro"
+  puts "Erro"
 else
   puts "Resultado: #{a}"
 end
